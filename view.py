@@ -17,3 +17,12 @@ class MapView:
                 else:
                     row += "❍ "
             print(row)
+
+    def showDesc(self):
+        print('Legend:')
+        print("🟢 - Start")
+        print("🔴 - End")
+        print("🟡 - Path")
+        print("◻️  - Block grid")
+        print("❍  - Empty grid")
+            

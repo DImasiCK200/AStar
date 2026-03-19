@@ -21,5 +21,9 @@ def main():
     view = MapView(grid)
     view.render(path, start, end)
 
+    print()
+    
+    view.showDesc()
+
 if __name__ == "__main__":
     main()

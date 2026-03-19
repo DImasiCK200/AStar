@@ -7,13 +7,13 @@ class MapView:
             row = ""
             for x in range(self.map.width):
                 if (x, y) == (start.x, start.y):
-                    row += "S "
+                    row += "🟢"
                 elif (x, y) == (end.x, end.y):
-                    row += "E "
+                    row += "🔴"
                 elif not self.map.grid[x][y].walkable:
-                    row += "B "
+                    row += "◻️ "
                 elif (x, y) in path:
-                    row += "o "
+                    row += "🟡"
                 else:
-                    row += ". "
+                    row += "❍ "
             print(row)
